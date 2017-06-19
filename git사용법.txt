@@ -1,5 +1,5 @@
-0. ¼³Á¤ÇÏ±â
-//git commint¿¡ »ç¿ëµÉ username
+0. ì„¤ì •í•˜ê¸°
+//git commintì— ì‚¬ìš©ë  username
 
 //git config --global user.name "your_name"
 //git config --global user.email "your_email@example.com"
@@ -7,39 +7,39 @@
 git config --global user.name sherazzang
 git config --global user.email "shera31@naver.com"
 
-//¼³Á¤ÇÑ ³»¿ë È®ÀÎ
+//ì„¤ì •í•œ ë‚´ìš© í™•ì¸
 git config --list
 
-1. ·ÎÄÃ ÀúÀå¼Ò »ı¼ºÇÏ±â
+1. ë¡œì»¬ ì €ì¥ì†Œ ìƒì„±í•˜ê¸°
 mkdir myProject
 
 cd MyProject
 
-//git init - ·ÎÄÃÀúÀå¼Ò¸¦ ½ÃÀÛÀ¸·Î »õ·Î¿î ÇÁ·ÎÁ§Æ®¸¦ ½ÃÀÛÇÏ´Â °æ¿ì¿¡»ç¿ëµÇ¸é ºñ¾îÀÖ´Â git ÀúÀå¼Ò°¡ »ı¼ºµÈ´Ù
-//git clone - ¿ø°İÀúÀå¼Ò¿¡ ÀÖ´Â ÇÁ·ÎÁ§Æ®¸¦ ¹Ş¾Æ¿Í¼­ ·ÎÄÃÀúÀå¼Ò¿¡ ¸¸µå´Â ¹æ¹ı.
+//git init - ë¡œì»¬ì €ì¥ì†Œë¥¼ ì‹œì‘ìœ¼ë¡œ ìƒˆë¡œìš´ í”„ë¡œì íŠ¸ë¥¼ ì‹œì‘í•˜ëŠ” ê²½ìš°ì—ì‚¬ìš©ë˜ë©´ ë¹„ì–´ìˆëŠ” git ì €ì¥ì†Œê°€ ìƒì„±ëœë‹¤
+//git clone - ì›ê²©ì €ì¥ì†Œì— ìˆëŠ” í”„ë¡œì íŠ¸ë¥¼ ë°›ì•„ì™€ì„œ ë¡œì»¬ì €ì¥ì†Œì— ë§Œë“œëŠ” ë°©ë²•.
 git init
 
-2. ·ÎÄÃ ÀúÀå¼Ò¿¡ ÀúÀåÇÏ±â
+2. ë¡œì»¬ ì €ì¥ì†Œì— ì €ì¥í•˜ê¸°
 touch Readme.md
 
-//ÆÄÀÏÀ» »ı¼ºÈÄ Ä¿¸Çµå¸¦ ½ÇÇàÇØ¼­ ¾Æ·¡¿Í  °°Àº ³»¿ëÀ» È®ÀÎ ÇÒ ¼ö ÀÖ´Ù.
+//íŒŒì¼ì„ ìƒì„±í›„ ì»¤ë§¨ë“œë¥¼ ì‹¤í–‰í•´ì„œ ì•„ë˜ì™€  ê°™ì€ ë‚´ìš©ì„ í™•ì¸ í•  ìˆ˜ ìˆë‹¤.
 git status
 
-//ÇÁ·ÎÁ§Æ®ÀÇ master ºê·£Ã÷»ó¿¡ ÀÖ´Ù´Â°ÍÀ» ¸»ÇÑ´Ù
+//í”„ë¡œì íŠ¸ì˜ master ë¸Œëœì¸ ìƒì— ìˆë‹¤ëŠ”ê²ƒì„ ë§í•œë‹¤
 
 On branch master
 Initial commit
 
-Untracked files : // git¿¡ µî·ÏµÇÁö ¾ÊÀº ÆÄÀÏ ¸ñ·ÏÀ» º¸¿©ÁØ´Ù.
+Untracked files : // gitì— ë“±ë¡ë˜ì§€ ì•Šì€ íŒŒì¼ ëª©ë¡ì„ ë³´ì—¬ì¤€ë‹¤.
 (use "git add<file>..." to include in what will be commintted)
 
 Readme.md
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-// git À¸·Î °ü¸®ÇÒ ÆÄÀÏÀ» µî·Ï
+// git ìœ¼ë¡œ ê´€ë¦¬í•  íŒŒì¼ì„ ë“±ë¡
 git add reademe.md
-// git add ÈÄ ¾Æ·¡ÀÇ Ä¿¸Çµå¸¦ ½ÇÇàÇÏ¸é Readme.md ÆÄÀÏÀÌ µî·ÏµÈ°ÍÀ» È®ÀÎÇÒ¼öÀÖ´Ù.
+// git add í›„ ì•„ë˜ì˜ ì»¤ë§¨ë“œë¥¼ ì‹¤í–‰í•˜ë©´ Readme.md íŒŒì¼ì´ ë“±ë¡ëœê²ƒì„ í™•ì¸í• ìˆ˜ìˆë‹¤.
 git status
 
 On branch master
@@ -48,39 +48,39 @@ Initial commit
 Changes to be committe4d:
 (use "git rm --cached<file>..." to unstage)
 new file : Readme.md
-//·ÎÄÃÀúÀå¼Ò¿¡ ÀúÀåÇÑ´Ù
+//ë¡œì»¬ì €ì¥ì†Œì— ì €ì¥í•œë‹¤
 git commit - m "initial commit"
 
 
-3. ·ÎÄÃ ÀúÀå¼Ò¿Í ¿ø°İÀúÀå¼Ò ¿¬°á
-//githubÀÇ ¿ø°İÀúÀå¼Ò¿Í ¿¬°á
+3. ë¡œì»¬ ì €ì¥ì†Œì™€ ì›ê²©ì €ì¥ì†Œ ì—°ê²°
+//githubì˜ ì›ê²©ì €ì¥ì†Œì™€ ì—°ê²°
 git remote add origin https:github.com/username/myproject.gif
-//·ÎÄÃ ÀúÀå¼Ò°¡ ¾Ë°íÀÖ´Â ¿ø°İÀúÀå¼Ò¿¡ ´ëÇÑ ¸ğµç Ç×¸ñÀ» º¸¿©ÁØ´Ù
+//ë¡œì»¬ ì €ì¥ì†Œê°€ ì•Œê³ ìˆëŠ” ì›ê²©ì €ì¥ì†Œì— ëŒ€í•œ ëª¨ë“  í•­ëª©ì„ ë³´ì—¬ì¤€ë‹¤
 git rermote -v
 
-4 ¿ø°İÀúÀå¼Ò¿¡ ÀúÀåÇÏ±â
-//master branch ¿¡ push ÇÑ´Ù
+4 ì›ê²©ì €ì¥ì†Œì— ì €ì¥í•˜ê¸°
+//master branch ì— push í•œë‹¤
 git push origin master
 
-//fatal : the current branch master has no upstream baqnch. ºê·£Ä¡°¡ ¿ø°İÀúÀå¼Ò¿¡ ¾øÀ»°æ¿ì ¹ß»ı.
-git push -u origin master // -u ¿ø°İÀúÀå¼Ò¿¡  master¶ó´Â branch¸¦ »ı¼ºÇÏ°í push ÇÑ´Ù.
+//fatal : the current branch master has no upstream baqnch. ë¸Œëœì¹˜ê°€ ì›ê²©ì €ì¥ì†Œì— ì—†ì„ê²½ìš° ë°œìƒ.
+git push -u origin master // -u ì›ê²©ì €ì¥ì†Œì—  masterë¼ëŠ” branchë¥¼ ìƒì„±í•˜ê³  push í•œë‹¤.
 
-// ![rejected] master --> master (fetch first)ÀÌ¹Ì º¯°æµÈ ÆÄÀÏÀÌ ¿ø°İÀúÀå¼Ò¿¡  ÀÖÀ»°æ¿ì ¹ß»ı
+// ![rejected] master --> master (fetch first)ì´ë¯¸ ë³€ê²½ëœ íŒŒì¼ì´ ì›ê²©ì €ì¥ì†Œì—  ìˆì„ê²½ìš° ë°œìƒ
 git push origin master
 
-//pull - ¿ø°æ°ÅÀå¼ÒÀÇ ³»¿ëÀ» °¡Á®¿Í ·ÎÄÃ ÀúÀå¼ÒÀÇ ³»¿ë°ú ÀÚµ¿À¸·Î º´ÇàÀÛ¾÷À» ¼öÇàÇÑ´Ù
-//fetch - ¿ø°İÀúÀå¼ÒÀÇ ³»¿ëÀ» È®ÀÎ¸¸ ÇÏ°í ·ÎÄÃÀúÀå¼ÒÀÇ ³»¿ë°ú º´ÇàÀÛ¾÷À» ¼öÇàÇÏÁö ¾Ê´Â´Ù.
+//pull - ì›ê²½ê±°ì¥ì†Œì˜ ë‚´ìš©ì„ ê°€ì ¸ì™€ ë¡œì»¬ ì €ì¥ì†Œì˜ ë‚´ìš©ê³¼ ìë™ìœ¼ë¡œ ë³‘í–‰ì‘ì—…ì„ ìˆ˜í–‰í•œë‹¤
+//fetch - ì›ê²©ì €ì¥ì†Œì˜ ë‚´ìš©ì„ í™•ì¸ë§Œ í•˜ê³  ë¡œì»¬ì €ì¥ì†Œì˜ ë‚´ìš©ê³¼ ë³‘í–‰ì‘ì—…ì„ ìˆ˜í–‰í•˜ì§€ ì•ŠëŠ”ë‹¤.
 
-¿ä¾à
-mkdir ~/Myproject //  ÀÛ¾÷µğ·ºÅä¸® »ı¼º
-cd ~/myproject // µğ·ºÅä¸®·Î µé¤©¾î°¡¼­
-git init // ·ÎÄÃÀúÀå¼Ò·Î Àû¿ë
-git status // ·ÎÄÃÀúÀå¼Ò »óÅÂ È®ÀÎ
-gid add ÆÄÀÏ // ±ê ¸ñ·Ï¿¡ ÆÄÀÏÃß°¡
-git add . // ±ê ¸ñ·Ï¿¡ µğ·ºÅä¸®ÀÇ ¸ğµç ÆÄÀÏ Ãß°¡ 
-git commit -m "Ä¿¹Ô ÄÚ¸àÆ®" // ·ÎÄÃÀúÀå¼Ò¿¡ Ä¿¹Ô
-git remote add origin https://github.com/sherazzang/myprojuect.gif // ·ÎÄÃ°ú ¿ø°İÀúÀå¼Ò ¿¬°á
-remote -v // ¿¬°áµÈ ¿ø°İ ÀúÀå¼Ò È®ÀÎ
-push origin master // ¿ø°İÀúÀå¼Ò¿¡ push
+ìš”ì•½
+mkdir ~/Myproject //  ì‘ì—…ë””ë ‰í† ë¦¬ ìƒì„±
+cd ~/myproject // ë””ë ‰í† ë¦¬ë¡œ ë“¤ã„¹ì–´ê°€ì„œ
+git init // ë¡œì»¬ì €ì¥ì†Œë¡œ ì ìš©
+git status // ë¡œì»¬ì €ì¥ì†Œ ìƒíƒœ í™•ì¸
+git add íŒŒì¼ // ê¹ƒ ëª©ë¡ì— íŒŒì¼ì¶”ê°€
+git add . // ê¹ƒ ëª©ë¡ì— ë””ë ‰í† ë¦¬ì˜ ëª¨ë“  íŒŒì¼ ì¶”ê°€ 
+git commit -m "ì»¤ë°‹ ì½”ë©˜íŠ¸" // ë¡œì»¬ì €ì¥ì†Œì— ì»¤ë°‹
+git remote add origin https://github.com/sherazzang/myprojuect.gif // ë¡œì»¬ê³¼ ì›ê²©ì €ì¥ì†Œ ì—°ê²°
+remote -v // ì—°ê²°ëœ ì›ê²© ì €ì¥ì†Œ í™•ì¸
+push origin master // ì›ê²©ì €ì¥ì†Œì— push
 
 
