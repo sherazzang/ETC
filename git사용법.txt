@@ -1,0 +1,86 @@
+0. 설정하기
+//git commint에 사용될 username
+
+//git config --global user.name "your_name"
+//git config --global user.email "your_email@example.com"
+
+git config --global user.name sherazzang
+git config --global user.email "shera31@naver.com"
+
+//설정한 내용 확인
+git config --list
+
+1. 로컬 저장소 생성하기
+mkdir myProject
+
+cd MyProject
+
+//git init - 로컬저장소를 시작으로 새로운 프로젝트를 시작하는 경우에사용되면 비어있는 git 저장소가 생성된다
+//git clone - 원격저장소에 있는 프로젝트를 받아와서 로컬저장소에 만드는 방법.
+git init
+
+2. 로컬 저장소에 저장하기
+touch Readme.md
+
+//파일을 생성후 커맨드를 실행해서 아래와  같은 내용을 확인 할 수 있다.
+git status
+
+//프로젝트의 master 브랜츠상에 있다는것을 말한다
+
+On branch master
+Initial commit
+
+Untracked files : // git에 등록되지 않은 파일 목록을 보여준다.
+(use "git add<file>..." to include in what will be commintted)
+
+Readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+// git 으로 관리할 파일을 등록
+git add reademe.md
+// git add 후 아래의 커맨드를 실행하면 Readme.md 파일이 등록된것을 확인할수있다.
+git status
+
+On branch master
+Initial commit
+
+Changes to be committe4d:
+(use "git rm --cached<file>..." to unstage)
+new file : Readme.md
+//로컬저장소에 저장한다
+git commit - m "initial commit"
+
+
+3. 로컬 저장소와 원격저장소 연결
+//github의 원격저장소와 연결
+git remote add origin https:github.com/username/myproject.gif
+//로컬 저장소가 알고있는 원격저장소에 대한 모든 항목을 보여준다
+git rermote -v
+
+4 원격저장소에 저장하기
+//master branch 에 push 한다
+git push origin master
+
+//fatal : the current branch master has no upstream baqnch. 브랜치가 원격저장소에 없을경우 발생.
+git push -u origin master // -u 원격저장소에  master라는 branch를 생성하고 push 한다.
+
+// ![rejected] master --> master (fetch first)이미 변경된 파일이 원격저장소에  있을경우 발생
+git push origin master
+
+//pull - 원경거장소의 내용을 가져와 로컬 저장소의 내용과 자동으로 병행작업을 수행한다
+//fetch - 원격저장소의 내용을 확인만 하고 로컬저장소의 내용과 병행작업을 수행하지 않는다.
+
+요약
+mkdir ~/Myproject //  작업디렉토리 생성
+cd ~/myproject // 디렉토리로 들ㄹ어가서
+git init // 로컬저장소로 적용
+git status // 로컬저장소 상태 확인
+gid add 파일 // 깃 목록에 파일추가
+git add . // 깃 목록에 디렉토리의 모든 파일 추가 
+git commit -m "커밋 코멘트" // 로컬저장소에 커밋
+git remote add origin https://github.com/sherazzang/myprojuect.gif // 로컬과 원격저장소 연결
+remote -v // 연결된 원격 저장소 확인
+push origin master // 원격저장소에 push
+
+
